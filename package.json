@@ -1,8 +1,8 @@
 {
-  "name": "app-receitas",
+  "name": "app-todo",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "Um aplicativo para organizar melhor seu dia a dia",
+  "productName": "Tarefas",
   "author": "thobiasvicente <thobiascontact@gmail.com>",
   "private": true,
   "scripts": {
