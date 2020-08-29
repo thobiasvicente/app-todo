@@ -1,6 +1,6 @@
 # Quasar App (app-todo)
 
-A Quasar Framework app
+A simple To do list
 
 ## Install the dependencies
 ```bash
