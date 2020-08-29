@@ -69,7 +69,7 @@ export default {
     const darkMode = localStorage.getItem('darkMode')
     if (darkMode === 'true') {
       this.$q.dark.toggle()
-      this.value = darkMode
+      this.value = true
     }
   }
 }
