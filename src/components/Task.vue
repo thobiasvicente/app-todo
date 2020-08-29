@@ -7,16 +7,6 @@
     <span @click.stop="$emit('taskDeleted', task)" class="close">x</span>
     <p>{{ task.name }}</p>
   </div>
-  <!-- <span @click.stop="$emit('taskDeleted', task)" class="close">x</span> -->
-  <!-- <q-card
-      @click="$emit('taskStateChanged', task)"
-      :class="stateClass"
-      class="task  text-white"
-    >
-      <q-card-section class="q-pt-none">
-        {{ task.name }}
-      </q-card-section>
-    </q-card> -->
 </template>
 
 <script>
