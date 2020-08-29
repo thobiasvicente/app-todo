@@ -62,6 +62,14 @@ export default {
   methods: {
     toggleDarkMode() {
       this.$q.dark.toggle()
+      localStorage.setItem('darkMode', this.value)
+    }
+  },
+  created() {
+    const darkMode = localStorage.getItem('darkMode')
+    if (darkMode === 'true') {
+      this.$q.dark.toggle()
+      this.value = darkMode
     }
   }
 }
