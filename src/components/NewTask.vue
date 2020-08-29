@@ -5,7 +5,7 @@
       type="text"
       filled
       v-model="name"
-      label="Adicionar"
+      label="Adicionar..."
       :dense="dense"
       style="width:80vw"
       color="deep-purple"
@@ -28,8 +28,10 @@ export default {
 
   methods: {
     add() {
-      this.$emit('taskAdded', { name: this.name })
-      this.name = ''
+      if (this.name !== '') {
+        this.$emit('taskAdded', { name: this.name })
+        this.name = ''
+      }
     }
   }
 }
